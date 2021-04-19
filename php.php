@@ -90,6 +90,14 @@ case 'PUT':
 	break;
 
 case 'DELETE':
+
+	// validamos que el recurso exista
+	if (!empty($resourceId) && array_key_exists($resourceId, $books)){
+		// Eliminamos el recurso
+		unset( $books[ $resourceId]);    
+		// Aquí verificamos que los cambios se han realizado  
+		echo json_encode($books);      
+	}
 	break;
 
 
