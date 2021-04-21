@@ -20,27 +20,73 @@ if(!in_array($resourceType, $allowedResourceTypes)){
 die;
 
 }
+
+$authors = [
+	1 => [
+	  'nombre' => 'carlos ',
+	  'fecha de nacimiento' => 1988,
+	  'pais de nacimiento' => 'colombia',
+  
+	],
+	2 => [
+	  'nombre' => 'andres ',
+	  'fecha de nacimiento' => 2000,
+	  'pais de nacimiento' => 'venezuela',
+	  
+   ],
+   3 => [
+	  'nombre' => 'gabriel ', 
+	  'fecha de nacimiento' => 1995,
+	  'pais de nacimiento' => 'panama',
+	  
+	  ],
+
+
+
+
+];
 $books = [
 	1 => [
 		'titulo' => 'lo que el viento se llevo',
-		'authors' => 1,
-		'genres' => 2,
+		'autor' => 1,
+		'genero' => 2,
 	
 	],
 	2 => [
 		'titulo' => 'el principito',
-		'authors' => 2,
-		'genres' => 2,
+		'autor' => 2,
+		'genero' => 1,
 	
 	],
 	3 => [
 		'titulo' => 'la nueva colombia',
-		'authors' => 1,
-		'genres' => 1,
+		'autor' => 1,
+		'genero' => 2,
 	
 	],
 	
-	];
+];
+
+
+
+$genres = [
+	1 => [
+		
+		'genero' => 'aventura',
+	
+	],
+	2 => [
+		
+		'genero' => 'historia',
+	
+	],
+	3 => [
+		
+		'genero' => 'teatro',
+	
+	],
+	
+];
 
 header('Content-Type: application/json');
 
