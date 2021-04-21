@@ -21,47 +21,56 @@ die;
 
 }
 
-$authors = [
-	1 => [
-	  'nombre' => 'carlos ',
-	  'fecha de nacimiento' => 1988,
-	  'pais de nacimiento' => 'colombia',
-  
-	],
-	2 => [
-	  'nombre' => 'andres ',
-	  'fecha de nacimiento' => 2000,
-	  'pais de nacimiento' => 'venezuela',
-	  
-   ],
-   3 => [
-	  'nombre' => 'gabriel ', 
-	  'fecha de nacimiento' => 1995,
-	  'pais de nacimiento' => 'panama',
-	  
-	  ],
-
-
-
-
-];
 $books = [
 	1 => [
 		'titulo' => 'lo que el viento se llevo',
-		'autor' => 1,
-		'genero' => 2,
+		
+		'genero' =>  [
+            'id' => 1,
+			'nombre_genero' => 'historia',
+		
+		],
+		'autor' => [
+			'id' => 1,
+			'nombre_autor' => 'carlos ',
+			'fecha de nacimiento' => 1988,
+			'pais de nacimiento' => 'colombia',
+		
+		  ],
 	
 	],
 	2 => [
 		'titulo' => 'el principito',
-		'autor' => 2,
-		'genero' => 1,
+		
+		'genero' => [
+			'id' => 2,
+			'nombre_genero' => 'aventura',
+		
+		],
+		'autor' => [
+			'id' => 2,
+			'nombre_autor' => 'andres ',
+			'fecha de nacimiento' => 2000,
+			'pais de nacimiento' => 'venezuela',
+			
+		 ],
 	
 	],
 	3 => [
 		'titulo' => 'la nueva colombia',
-		'autor' => 1,
-		'genero' => 2,
+		
+		'genero' => [
+			'id' => 1,
+			'nombre_genero' => 'historia',
+		
+		],
+		'autor' => [
+			'id' => 1,
+			'nombre_autor' => 'carlos ',
+			'fecha de nacimiento' => 1988,
+			'pais de nacimiento' => 'colombia',
+		
+		  ],
 	
 	],
 	
@@ -69,24 +78,7 @@ $books = [
 
 
 
-$genres = [
-	1 => [
-		
-		'genero' => 'aventura',
-	
-	],
-	2 => [
-		
-		'genero' => 'historia',
-	
-	],
-	3 => [
-		
-		'genero' => 'teatro',
-	
-	],
-	
-];
+
 
 header('Content-Type: application/json');
 
